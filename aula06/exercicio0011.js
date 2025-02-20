@@ -1,9 +1,9 @@
-var idade = 67
-console.log(`voce tem ${idade} anos`)
-if(idade < 16) {
+var idad = 67
+console.log(`voce tem ${idad} anos`)
+if(idad < 16) {
     console.log('nao vota')
 }else {
-    if(idade < 18 || idade > 65){
+    if(idade < 18 || idad > 65){
         console.log('voto opcional')
     }else {
         console.log('obigado a votar')
