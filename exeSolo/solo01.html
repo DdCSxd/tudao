@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Nacionalidade</title>
+</head>
+<body>
+    <h1>Brasileiro ou Gringo</h1>
+    Qual seu pais<input type="text" name="txt1" id="txt1" placeholder="digite seu pais">
+    <input type="button" value="verificar" onclick="verificar()">
+    <div name="nac" id="nac">
+
+    </div>
+
+    <script>
+        function verificar(){
+            var pais = document.getElementById('txt1').value
+            var nac = document.getElementById('nac')
+            if(pais.toLowerCase() !=  'brasil'){
+                nac.innerHTML = '<p>voce é gringo</p>'
+            }else {
+                nac.innerHTML = '<p>voce é brasileiro</p>'
+            }
+        }
+    </script>
+    
+</body>
+</html>
